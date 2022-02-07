@@ -9,6 +9,49 @@ const styles = {
   },
 };
 
+const PHOTO_RADIUS = 75;
+const COUNT = 7;
+
+const Pibes = () => {
+  const [circleRadius, setCircleRadius] = useState(0);
+
+  useEffect(() => {
+    const width = (window.innerWidth - 32) / 2;
+
+    setCircleRadius(width);
+  }, []);
+
+  return (
+    <div className="container">
+      {photos.map((photo, index) => {
+        const difference = index - Math.floor(COUNT / 2);
+        const distance = difference * PHOTO_RADIUS * 2;
+
+        return (
+          <div
+            key={photo.slice(5)}
+            className="photo_container"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: circleRadius + distance - PHOTO_RADIUS,
+            }}
+          >
+            <Image
+              src={photo}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              className="photo"
+              alt="photo"
+            />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
 const Counter = () => {
   const [counter, setCounter] = useState("");
 
@@ -27,20 +70,7 @@ const Counter = () => {
 
   return (
     <div>
-      <div>
-        {photos.map((photo) => (
-          <div className="photo_container" key={photo.slice(5)}>
-            <Image
-              src={photo}
-              className="photo"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-              alt="photo"
-            />
-          </div>
-        ))}
-      </div>
+      <Pibes />
       <p className="title">Viajamos en {counter} dias</p>
     </div>
   );

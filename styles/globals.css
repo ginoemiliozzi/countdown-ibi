@@ -15,19 +15,27 @@ a {
   box-sizing: border-box;
 }
 
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
 .photo {
   border-radius: 75px;
   margin-bottom: 32px;
 }
 
 .title {
+  margin-top: 190px;
   font-size: 2rem;
   text-align: center;
 }
 
 .photo_container {
   position: relative;
-
   display: inline-block;
   height: 150px;
   width: 150px;
