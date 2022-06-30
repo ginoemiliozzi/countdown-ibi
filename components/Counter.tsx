@@ -43,7 +43,7 @@ const Counter = () => {
           .concat(hasClass ? ["shake-lr"] : [])
           .join(" ")}
       >
-        <p className="title">Viajamos en </p>
+        <p className="title">ATENCION CUENTA REGRESIVA PARA IBIZA RUMIANTE </p>
         <Countdown />
       </div>
     </div>

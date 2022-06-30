@@ -8,8 +8,8 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Bari 2022</title>
-        <meta name="description" content="Bari 2022 con the bandwidth" />
+        <title>Ibiza Rumiante</title>
+        <meta name="description" content="Ibiza Rumiante 2022" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

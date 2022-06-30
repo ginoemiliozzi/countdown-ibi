@@ -1,11 +1,10 @@
 const photos: string[] = [
-  "/img/mauri.png",
-  "/img/juan.png",
-  "/img/bauti.png",
-  "/img/Octa.png",
-  "/img/pom.png",
-  "/img/andy.png",
-  "/img/tincho.png",
+  "/img/fch.jpeg",
+  "/img/fde.jpeg",
+  "/img/gno.jpeg",
+  "/img/grd.jpeg",
+  "/img/mnu.png",
+  "/img/zmb.jpeg"
 ];
 
 export { photos };
